@@ -1,4 +1,4 @@
-# Set up a Home lab
+# Setting up a Home lab
 
 A simple write up where i'm setting up a Home Lab using a type II hypervisor, a *Virtual Machine* in our case. For this project we will setup an offensive machine and a defensive machine, both linux distribution, and we will simulate an attack between two machines and a way to mitigate it. 
 
