@@ -1,6 +1,8 @@
 # Setup-a-Home-lab
 
-Basically a simple walkthrough of setting up a Home Lab using a type II hypervisor, which basically means a Virtual Machine. For this project we will setup an offensive machine and a defensive machine, both UNIX distribution, and we will simulate an attack between the machines with both perspectives. I will go with the easiest to use and most known offensive linux distribution : Kali Linux. For our defensive machine, I will go with the lastest version of Ubuntu, as I am emulating a normal user account. 
+A simple Write up of setting up a Home Lab using a type II hypervisor, a *Virtual Machine* in our case. For this project we will setup an offensive machine and a defensive machine, both Linux distribution, and we will simulate an attack between two machines and a way to mitigate it. 
+
+I will go with the easiest to use and most known offensive linux distribution : **Kali Linux**. For our defensive machine, I will go with the lastest version of **Ubuntu**, as I am emulating a normal user account surfing on the internet. 
 
 ## Step 1 : Downloading a virtualization software
 
