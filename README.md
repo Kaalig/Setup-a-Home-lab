@@ -89,12 +89,32 @@ For Kali Linux, since it is an OS that comes with many features and most of them
 
 ## Step 5 : Simulate a network Attack & Defense
 
+At this step, we will use an offensive tool in Kali Linux in order to gain information on our Ubuntu victim machine which is called **nmap** . This powerful tool will give us some information about what TCP port are open, and much more depending what flag you use. For now we will only launch a basic scan on the victim :
 
+```
+nmap -A 10.0.3.72 # Replace IP with your Ubuntu IP address
+```
 
+That should return some valuable information. 
 
+Now let's go back to our Ubuntu machine. We will use a method that blocks every signal coming from our Kali IP address using a Firewall named UFW (Uncomplicated Firewall). 
+Deploy Ubuntu and then do the following :
+```
+sudo apt install ufw
+sudo ufw enable
+sudo ufw deny from 10.0.3.72 # Replace with your Kali IP Address
+sudo ufw status
+```
+We have installed it, enabled, deny every incoming packets that comes from this specific address and we checked if it commit.
 
+However if we want to just monitor what our Kali Linux machine do from our Ubuntu's perspective, we will do something completely different :
 
-
+```
+sudo ufw enable
+sudo ufw allow ssh
+sudo ufw allow from 10.0.3.72 # Replace with Kali IP Address
+sudo ufw status
+```
 
 
 
