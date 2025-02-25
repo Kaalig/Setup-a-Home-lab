@@ -6,7 +6,7 @@ I will go with the easiest to use and most known offensive linux distribution : 
 
 ## Step 1 : Downloading a virtualization software
 
-There is plenty of good and renowed virtualization software, we will go with Oracle Virtual Box on this one. 
+There are plenty of good and renowed virtualization softwares, we will go with Oracle Virtual Box on this one. 
 
 For the download, simply go to : https://www.virtualbox.org/wiki/Downloads and download your OS package.
 
