@@ -65,7 +65,29 @@ Instructions :
 
 We need to configure our network in order to fully utilize our VMs.
 
-- Go to **Config** then **Network** . If we want to have a direct access to our home network, we use the **bridged adapter** . If we want a private network running, we use **NAT** . For our project  **NAT** is more interesting.
+- Go to **Config** then **Network** . If we want to have a direct access to our home network, we use the **bridged adapter** . If we want a private network running, we use **NAT** . For our project  **NAT** is more interesting. Now problem is, we still don't have a NAT network so let's make one.
+- Go to **files** then **tools** and select **Network Manager** and create a new network. Ipv4 should look like that : **10.0.2.0/24**
+
+Last step is to change again your configuration per machine. Instead of using just NAT in our network settings, we will use ***NAT Network*** and select the network name to make it work.
+
+
+## Step 4 : Install and configure Tools
+
+At this point, your machines are configured and installed, ready to be used for the first time.
+
+When you load Ubuntu for the first time, we should first of all update the OS just in case, and then get some essentials tools that Ubuntu user generally have. Here's the code :
+```
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y build-essential git curl wget
+
+```
+Note : We invoke sudo to have the administrator right and we update (apt update) our machine to te latest version and we upgrade all the packages with have with apt upgrade. Flag -y is for answering yes to every prompt we could have after typing this command.
+
+
+For Kali Linux, since it is an OS that comes with many features and most of them are really good, it is not necessary to install more tools yet. Simply update and upgrade again like we did earlier.
+
+
+## Step 5 : Simulate a network Attack & Defense
 
 
 
