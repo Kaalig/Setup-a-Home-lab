@@ -107,7 +107,7 @@ sudo ufw status
 ```
 We have installed it, enabled, deny every incoming packets that comes from this specific address and we checked if it commit.
 
-However if we want to just monitor what our Kali Linux machine do from our Ubuntu's perspective, we will do something completely different :
+However if we want to just monitor what our Kali Linux machine do from our Ubuntu's perspective, we will do something completely different. In this case it is interesting to see what is going on but you should never do it in real conditions :
 
 ```
 sudo ufw enable
@@ -116,7 +116,20 @@ sudo ufw allow from 10.0.3.72 # Replace with Kali IP Address
 sudo ufw status
 ```
 
+Then on Ubuntu still, you will want to use **Wireshark** to analyze the network and capture the traffic :
 
+```
+sudo apt install wireshark
+sudo wireshark
+```
+
+You will then see what is going on. Obviously what you see is out of this Walkthrought but it is still interesting to see what is going during during  an attack.
+
+## Conclusion
+
+We have successfully set up a home lab with multiple machines ready to operate and we connected them to our network. We also configurate our machines to not have any problems. Lastly we simulate a theoretical attack and their consequences but also a way to mitigate it.
+
+Thanks for reading till the end. Bless you.
 
 
 
