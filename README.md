@@ -77,16 +77,16 @@ Last step is to change again your configuration per machine. Instead of using ju
 
 At this point, your machines are configured and installed, ready to be used for the first time.
 
-When you load Ubuntu for the first time, we should first of all update the OS just in case, and then get some essentials tools that Ubuntu user generally have. Here's the code :
+When you load Ubuntu for the first time, you should first of all update the OS just in case, and then get some essentials tools that Ubuntu user generally have. Here's the code :
 ```
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y build-essential git curl wget
 
 ```
-Note : We invoke sudo to have the administrator right and we update (apt update) our machine to te latest version and we upgrade all the packages with have with apt upgrade. Flag -y is for answering yes to every prompt we could have after typing this command.
+*Note : We invoke sudo to have the administrator right and we update (apt update) our machine to te latest version and we upgrade all the packages with have with apt upgrade. Flag -y is for answering yes to every prompt we could have after typing this command.*
 
 
-For Kali Linux, since it is an OS that comes with many features and most of them are really good, it is not necessary to install more tools yet. Simply update and upgrade again like we did earlier.
+For Kali Linux, since it is an OS that comes with many features and most of them are really good, it is not necessary to install more tools yet. Simply update and upgrade again like we did earlier. 
 
 
 ## Step 5 : Simulate a network Attack & Defense
@@ -99,7 +99,7 @@ nmap -A 10.0.3.72 # Replace IP with your Ubuntu IP address
 
 That should return some valuable information. 
 
-Now let's go back to our Ubuntu machine. We will use a method that blocks every signal coming from our Kali IP address using a Firewall named UFW (Uncomplicated Firewall). 
+Now let's go back to our Ubuntu machine. We will use a method that blocks every signal coming from our Kali IP address using a Firewall named **UFW (Uncomplicated Firewall)**. 
 Deploy Ubuntu and then do the following :
 ```
 sudo apt install ufw
@@ -125,7 +125,7 @@ sudo apt install wireshark
 sudo wireshark
 ```
 
-You will then see what is going on. Obviously what you see is out of this Walkthrought but it is still interesting to see what is going during during  an attack.
+You will then see what is going on. Obviously what you see is out of this walkthrought but it is still interesting to see what is going during during  an attack.
 
 ## Conclusion
 
