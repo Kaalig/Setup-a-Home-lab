@@ -1,6 +1,6 @@
 # Setup-a-Home-lab
 
-A simple Write up of setting up a Home Lab using a type II hypervisor, a *Virtual Machine* in our case. For this project we will setup an offensive machine and a defensive machine, both Linux distribution, and we will simulate an attack between two machines and a way to mitigate it. 
+A simple write up where i'm setting up a Home Lab using a type II hypervisor, a *Virtual Machine* in our case. For this project we will setup an offensive machine and a defensive machine, both linux distribution, and we will simulate an attack between two machines and a way to mitigate it. 
 
 I will go with the easiest to use and most known offensive linux distribution : **Kali Linux**. For our defensive machine, I will go with the lastest version of **Ubuntu**, as I am emulating a normal user account surfing on the internet. 
 
@@ -22,7 +22,7 @@ If you already are using Linux, type this command :
 sudo apt upgrade
 sudo apt install virtualbox
 ```
-Note : I tend to always upgrade my distribution before installing something on Linux in order to not have any weird problems. It's better to prevent than to repair !
+*Note : I tend to always upgrade my distribution before installing something on Linux in order to not have any weird problems. It's better to prevent than to repair !*
 
 ### 1.2 Installing extension package
 
@@ -30,7 +30,7 @@ Extension package of VirtualBox is not a necessity but it gives some interesting
 
 To download it, same link again : https://www.virtualbox.org/wiki/Downloads
 
--To install it, open **Oracle VirtualBox** , then go to 'file' , then 'tools' , then 'Extension Pack Manager' and add your extension using the + button. Using 'CTRL+T' is the same.
+-To install it, open **Oracle VirtualBox** , then go to '**file**' , then '**tools**' , then '**Extension Pack Manager**' and add your extension using the + button. Using '**CTRL+T**' will do the same result.
 
 
 ## Step 2 : Creating your Virtual Machines
@@ -44,11 +44,11 @@ First of all we download our .iso files :
 
 ### 1.2 Installing our .iso
 
-Note : Order of creation does not matter. You can create your Kali VM first if you want.
+*Note : Order of creation does not matter. You can create your Kali VM first if you want.*
 
-- After that we open VirtualBox and we click on "+ ADD" to add our machines. Name them whatever you want them to be name. 
-- Choose the type (Linux for both) and the version (Ubuntu for Ubuntu obviously / Debian or Ubuntu for Kali)
-- Allocate memory to both VMs. 4GB or more is recommended. If your computer can't manage to give 4GB+ to a VM, just put 2Gb but be aware that it will be really slow and you should take your time during every manipulation.
+- After that we open VirtualBox and we click on "**+ ADD**" to add our machines. Name them whatever you want them to be name. 
+- Choose the type (**Linux** for both) and the version (**Ubuntu** for Ubuntu obviously / **Debian or Ubuntu** for Kali)
+- Allocate memory to both VMs. 4GB or more is recommended. If your computer can't manage to give 4GB+ to a VM, just put 2Gb but be aware that it will be **really slow** and you should take your time during every manipulation.
 - Create a Hard disk space of 20 Gb or more if possible. 15Gb if not.
 
 
@@ -131,7 +131,8 @@ You will then see what is going on. Obviously what you see is out of this Walkth
 
 We have successfully set up a home lab with multiple machines ready to operate and we connected them to our network. We also configurate our machines to not have any problems. Lastly we simulate a theoretical attack and their consequences but also a way to mitigate it.
 
-Thanks for reading till the end. Bless you.
+Thanks for reading till the end. Hope it helped you in some ways. 
+Bless you.
 
 
 
